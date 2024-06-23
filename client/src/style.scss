@@ -13,6 +13,28 @@ body {
   color: white;
 
   #app {
+    .modal {
+      .modal-dialog {
+        .modal-content {
+          .modal-body {
+            padding: 0;
+            .card {
+              color: white;
+              background-color: #121212;
+              border: none;
+              &:hover {
+                background-color: #1a1a1a;
+              }
+              .image {
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .container-lg {
       h1 {
         color: #3ed571;

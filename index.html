@@ -19,7 +19,11 @@
       <div class="container-lg text-center py-5">
         <h1 class="mb-5">{{title}}</h1>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-          <div class="col" v-for="disc in dischi">
+          <div
+            class="col"
+            v-for="(disc, index) in dischi"
+            @click="getModal(disc.id)"
+          >
             <div class="card">
               <div class="image px-4 my-4">
                 <img :src="disc.thumbUrl" :alt="disc.name" />
@@ -34,10 +38,39 @@
           </div>
         </div>
       </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="card" v-if="selectedDisc">
+                <div class="image px-4 my-4">
+                  <img :src="selectedDisc.thumbUrl" :alt="selectedDisc.name" />
+                </div>
+                <div class="text px-4 mb-4 text-start">
+                  <h5>{{selectedDisc.name}}</h5>
+                  <p>Album: {{selectedDisc.album}}</p>
+                  <p>Artist: {{selectedDisc.artist}}</p>
+                  <h6>Year: {{selectedDisc.year}}</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- main -->
