@@ -1,32 +1,7 @@
 <?php
 
-$dischi = [
-    [
-        'name' => 'Gotye',
-        'url' => '',
-    ],
-    [
-        'name' => 'Gotye',
-        'url' => '',
-    ],
-    [
-        'name' => 'Gotye',
-        'url' => '',
-    ],
-    [
-        'name' => 'Gotye',
-        'url' => '',
-    ],
-    [
-        'name' => 'Gotye',
-        'url' => '',
-    ],
-    [
-        'name' => 'Gotye',
-        'url' => '',
-    ],
-];
+$dischi = file_get_contents('./dischi.json');
 
 header('Content-Type: application/json');
 
-echo json_encode($dischi);
+echo $dischi;
