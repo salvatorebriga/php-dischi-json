@@ -1,38 +1,44 @@
 [
   {
     "name": "Somebody That I Used To Know",
+    "album": "Making Mirrors",
     "artist": "Gotye, Kimbra",
     "year": "2011",
-    "thumbUrl": ""
+    "thumbUrl": "https://i.pinimg.com/originals/e4/8e/37/e48e37ba9a259eace271042c429945dc.jpg"
   },
   {
-    "name": "Somebody That I Used To Know",
-    "artist": "Gotye, Kimbra",
-    "year": "2011",
-    "thumbUrl": ""
+    "name": "Lovers Rock",
+    "album": "French Exit",
+    "artist": "TV Girl",
+    "year": "1975",
+    "thumbUrl": "https://f4.bcbits.com/img/a1459431106_65"
   },
   {
-    "name": "Somebody That I Used To Know",
-    "artist": "Gotye, Kimbra",
+    "name": "Save Your Tears",
+    "album": "After Hours",
+    "artist": "The Weeknd",
     "year": "2011",
-    "thumbUrl": ""
+    "thumbUrl": "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
   },
   {
-    "name": "Somebody That I Used To Know",
-    "artist": "Gotye, Kimbra",
-    "year": "2011",
-    "thumbUrl": ""
+    "name": "Bring Me To Life",
+    "album": "Daredevil: The Album",
+    "artist": "Evanescence",
+    "year": "2003",
+    "thumbUrl": "https://upload.wikimedia.org/wikipedia/en/b/bb/Evanescence_-_Bring_Me_to_Life.png"
   },
   {
-    "name": "Somebody That I Used To Know",
-    "artist": "Gotye, Kimbra",
-    "year": "2011",
-    "thumbUrl": ""
+    "name": "In The End",
+    "album": "Hybrid Theory",
+    "artist": "Linkin Park",
+    "year": "2001",
+    "thumbUrl": "https://upload.wikimedia.org/wikipedia/en/3/3f/LinkinParkIntheEnd.jpg"
   },
   {
-    "name": "Somebody That I Used To Know",
-    "artist": "Gotye, Kimbra",
-    "year": "2011",
-    "thumbUrl": ""
+    "name": "Castle Of Glass",
+    "album": "Hybrid Theory",
+    "artist": "Linkin Park",
+    "year": "2001",
+    "thumbUrl": "https://cdns-images.dzcdn.net/images/cover/0ce480e7723712dee352c68fdfef2599/500x500.jpg"
   }
 ]
