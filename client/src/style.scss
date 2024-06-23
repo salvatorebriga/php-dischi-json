@@ -7,3 +7,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #121212;
+  color: white;
+
+  #app {
+    .container {
+      h1 {
+        color: #3ed571;
+        font-size: 80px;
+      }
+      .row {
+        .col {
+          padding: 50px;
+          .card {
+            color: white;
+            background-color: #121212;
+            border: none;
+            &:hover {
+              background-color: #1a1a1a;
+            }
+            .image {
+              padding: 50px;
+              img {
+                width: 100%;
+              }
+            }
+            .text {
+              p {
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
