@@ -17,7 +17,12 @@
   <body>
     <div id="app" v-cloak>
       <div class="container text-center py-5">
-        <h1>{{title}}</h1>
+        <h1 class="mb-5">{{title}}</h1>
+        <div class="row">
+          <div class="col-4 mb-5" v-for="disc in dischi">
+            <div class="card">{{disc.name}}</div>
+          </div>
+        </div>
       </div>
     </div>
 
