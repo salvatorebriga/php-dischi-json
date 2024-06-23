@@ -13,14 +13,13 @@ body {
   color: white;
 
   #app {
-    .container {
+    .container-lg {
       h1 {
         color: #3ed571;
         font-size: 80px;
       }
       .row {
         .col {
-          padding: 50px;
           .card {
             color: white;
             background-color: #121212;
