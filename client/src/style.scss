@@ -36,10 +36,28 @@ body {
       }
     }
     .container-lg {
-      h1 {
+      h2 {
         color: #3ed571;
-        font-size: 80px;
       }
+      header {
+        h1 {
+          color: #3ed571;
+          font-size: 50px;
+          text-align: center;
+        }
+        ul {
+          display: flex;
+          list-style-type: none;
+          gap: 25px;
+          li {
+            a {
+              color: white;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
       .row {
         .col {
           .card {
@@ -55,6 +73,18 @@ body {
               }
             }
           }
+        }
+      }
+
+      form {
+        div {
+          .form-control {
+            max-width: 50%;
+            margin: 0 auto;
+          }
+        }
+        button {
+          background-color: #3ed571;
         }
       }
     }

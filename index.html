@@ -12,12 +12,15 @@
     />
     <!-- scss -->
     <link rel="stylesheet" href="./client/src/style.scss" />
-    <title>PHP Dischi</title>
+    <title>SoundWawe</title>
   </head>
   <body>
     <div id="app" v-cloak>
       <div class="container-lg text-center py-5">
-        <h1 class="mb-5">{{title}}</h1>
+        <header class="text-start">
+          <h1 class="mb-5">SoundWawe</h1>
+        </header>
+
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
           <div
             class="col"
@@ -37,6 +40,39 @@
             </div>
           </div>
         </div>
+
+        <hr class="mt-5 mb-5" />
+
+        <h2 class="mb-5">Aggiungi Brano</h2>
+
+        <form>
+          <div class="mb-3">
+            <label for="" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" />
+          </div>
+          <div class="mb-3">
+            <label for="album" class="form-label">Album:</label>
+            <input type="text" class="form-control" id="album" name="album" />
+          </div>
+          <div class="mb-3">
+            <label for="artist" class="form-label">Artist:</label>
+            <input type="text" class="form-control" id="artist" name="artist" />
+          </div>
+          <div class="mb-3">
+            <label for="year" class="form-label">Year:</label>
+            <input type="text" class="form-control" id="year" name="year" />
+          </div>
+          <div class="mb-3">
+            <label for="thumbUrl" class="form-label">Url Image:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="thumbUrl"
+              name="thumbUrl"
+            />
+          </div>
+          <button type="submit" class="btn mt-5">Submit</button>
+        </form>
       </div>
 
       <!-- Modal -->
