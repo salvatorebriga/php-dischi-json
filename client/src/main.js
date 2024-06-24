@@ -3,7 +3,6 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      title: "PHP DISCHI",
       url: "http://localhost/php-dischi-json/server/server.php",
       dischi: [],
       selectedDisc: null,
