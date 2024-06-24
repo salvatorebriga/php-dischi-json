@@ -45,33 +45,57 @@
 
         <h2 class="mb-5">Aggiungi Brano</h2>
 
-        <form>
+        <form @submit.prevent="addSong">
           <div class="mb-3">
-            <label for="" class="form-label">Name:</label>
-            <input type="text" class="form-control" id="name" name="name" />
+            <label for="name" class="form-label">Name:</label>
+            <input
+              v-model="newSong.name"
+              type="text"
+              class="form-control"
+              id="name"
+            />
           </div>
           <div class="mb-3">
             <label for="album" class="form-label">Album:</label>
-            <input type="text" class="form-control" id="album" name="album" />
+            <input
+              v-model="newSong.album"
+              type="text"
+              class="form-control"
+              id="album"
+              required
+            />
           </div>
           <div class="mb-3">
             <label for="artist" class="form-label">Artist:</label>
-            <input type="text" class="form-control" id="artist" name="artist" />
+            <input
+              v-model="newSong.artist"
+              type="text"
+              class="form-control"
+              id="artist"
+              required
+            />
           </div>
           <div class="mb-3">
             <label for="year" class="form-label">Year:</label>
-            <input type="text" class="form-control" id="year" name="year" />
+            <input
+              v-model="newSong.year"
+              type="text"
+              class="form-control"
+              id="year"
+              required
+            />
           </div>
           <div class="mb-3">
             <label for="thumbUrl" class="form-label">Url Image:</label>
             <input
+              v-model="newSong.thumbUrl"
               type="text"
               class="form-control"
               id="thumbUrl"
-              name="thumbUrl"
+              required
             />
           </div>
-          <button type="submit" class="btn mt-5">Submit</button>
+          <button type="submit" class="btn btn-primary mt-5">Submit</button>
         </form>
       </div>
 
