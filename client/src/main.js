@@ -34,12 +34,9 @@ createApp({
         document.getElementById("staticBackdrop")
       );
       modal.show();
-
-      console.log(this.selectedDisc);
     },
 
     addSong() {
-      console.log(this.newSong);
       axios
         .post(this.url + "?action=create", this.newSong)
         .then((response) => {
@@ -50,18 +47,22 @@ createApp({
           console.error("Error adding song: ", error);
         });
     },
+
     deleteSong(id) {
       if (confirm("Are you sure you want to delete this song?")) {
         axios
           .post(this.url + "?action=delete", { id })
           .then(() => {
+            // Remove the deleted song from the frontend
             this.dischi = this.dischi.filter((disc) => disc.id !== id);
+            this.selectedDisc = null; // Clear selected disc after deletion
           })
           .catch((error) => {
             console.error("Error deleting song: ", error);
           });
       }
     },
+
     resetForm() {
       this.newSong = {
         name: "",
@@ -72,6 +73,7 @@ createApp({
       };
     },
   },
+
   created() {
     this.getDischi();
   },
