@@ -17,6 +17,15 @@ if (isset($_GET['action'])) {
         saveDischi($dischi);
         echo json_encode($newDisc);
         die();
+    } else if ($action === 'delete' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+        $data = json_decode(file_get_contents('php://input'), true);
+        $idToDelete = $data['id'];
+        $dischi = array_filter($dischi, function ($disc) use ($idToDelete) {
+            return $disc['id'] != $idToDelete;
+        });
+        saveDischi($dischi);
+        echo json_encode(['message' => 'Song deleted successfully']);
+        die();
     }
 }
 

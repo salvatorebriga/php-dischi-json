@@ -36,6 +36,12 @@
                 <p>Album: {{disc.album}}</p>
                 <p>Artist: {{disc.artist}}</p>
                 <h6>Year: {{disc.year}}</h6>
+                <button
+                  class="btn btn-danger mt-3"
+                  @click="deleteSong(disc.id)"
+                >
+                  Delete
+                </button>
               </div>
             </div>
           </div>

@@ -50,6 +50,18 @@ createApp({
           console.error("Error adding song: ", error);
         });
     },
+    deleteSong(id) {
+      if (confirm("Are you sure you want to delete this song?")) {
+        axios
+          .post(this.url + "?action=delete", { id })
+          .then(() => {
+            this.dischi = this.dischi.filter((disc) => disc.id !== id);
+          })
+          .catch((error) => {
+            console.error("Error deleting song: ", error);
+          });
+      }
+    },
     resetForm() {
       this.newSong = {
         name: "",
